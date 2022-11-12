@@ -1,0 +1,9 @@
+
+# Ignore compiled binaries
+*
+!/**/
+!*.*
+!Makefile
+.gdb_history.
+.DS_Store
+.vscode

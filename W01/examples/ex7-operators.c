@@ -25,10 +25,8 @@ int main(void){
     printf("%d * %d = %d\n", x, y, x * y);
     printf("%d %% %d = %d\n", x, y, x % y);
 
-    //this illustrates the need to pay close attention to operation pre
+    //this illustrates the need to pay close attention to operation precedence
     double d = 7/2;
     printf("%.1lf\n", d);
 
-    x = 2;
-    y = x++
 }
