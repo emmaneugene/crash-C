@@ -72,7 +72,7 @@ int main(int argc, char *argv[]) {
 
 ```c
 // Declaration
-int common_factors(int x, int y);
+void common_factors(int x, int y);
 
 // Implementation
 void common_factors(int x, int y) {
@@ -92,6 +92,8 @@ void common_factors(int x, int y) {
 ### 7. Arrays, pointers and memory allocation
 
 - What is an array? What makes it useful?
+  - Contiguous block of memory for storing a certain datatype
+
 - What is a pointer? What makes it useful
 - null reference
 - Passing by *reference* vs passing by *value*
@@ -101,8 +103,30 @@ void common_factors(int x, int y) {
 ### 8. Strings
 
 - All strings are `char` arrays
+
 - How do we know when a string terminates?
-- Strings declared at compile-time are usually immutable
+
+- Strings declared using `*` are immutable
+
+  ```c
+  #include <stdio.h>
+  
+  void fun(char *str) {
+      printf("%c\n", str[1]);
+      str[1] = 'a';
+  }
+  
+  int main(void) {
+      char *mystr = "Hello"; // constant, immutable, read-only
+      char mystr2[] = "Testing"; // mutable
+  
+      fun(mystr2);
+      printf("%s\n", mystr);
+      printf("%s\n", mystr2);
+  }
+  ```
+
+  
 
 ### 9. Structs
 
