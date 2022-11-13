@@ -13,7 +13,7 @@ int main(void) {
         printf("%p -> %d\n", ptr1[i], *ptr1[i]);
     }
 
-    // Notice the difference
+    // Compare and contrast
     for (int i = 0; i < 3; i++) {
         printf("%p -> %d\n", &(*ptr2)[i], (*ptr2)[i]);
     }
