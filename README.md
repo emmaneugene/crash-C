@@ -1,5 +1,7 @@
 # CA code clinic 2
 
+## A brief introduction to programming in C
+
 ### Overview
 
 1. "Hello world"
@@ -148,10 +150,41 @@ void common_factors(int x, int y) {
 #### Tips
 
 - Get comfortable with the command line
+
 - Read and understand your compile and runtime errors
-- Write comments to structure your logic
+
+- Write comments to structure your logic, or as a placeholder for future code
+
 - Pay attention to variable names, especially as code gets more complex
+
 - Handle corner cases first
+
+  ❌ Don't do this
+
+  ```c
+  int main(void) {
+  		if (!/*corner case*/) {
+  				// Main body
+  		}
+  		// Handle corner case
+  }
+  ```
+
+  ✅ Do this
+
+  ```c
+  int main(void) {
+  		if (/*corner case*/) {
+  				// Handle corner case
+  				return
+  		}
+  		
+  		// Main body
+  }
+  ```
+
+  
+
 - Revisit old problems and come up with better solutions. Be able to explain the tradeoffs involved with each 
 
 #### Resources
