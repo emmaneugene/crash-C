@@ -21,7 +21,7 @@
 #include <stdio.h>
 
 int main(int argc, char *argv[]) {
-		printf("Hello, world!\n");
+  printf("Hello, world!\n");
 }
 ```
 
@@ -78,13 +78,13 @@ void common_factors(int x, int y);
 
 // Implementation
 void common_factors(int x, int y) {
-		int lowest = x < y ? x : y;
+  int lowest = x < y ? x : y;
 		
-		for (int i = 2; i <= lowest; i++) {
-				if (x % i == 0 && y % i == 0) {
-						printf("Common factor: %d\n", i)
-				}
-		}
+  for (int i = 2; i <= lowest; i++) {
+    if (x % i == 0 && y % i == 0) {
+      printf("Common factor: %d\n", i)
+    }
+  }
 }
 ```
 
@@ -114,17 +114,17 @@ void common_factors(int x, int y) {
   #include <stdio.h>
   
   void fun(char *str) {
-      printf("%c\n", str[1]);
-      str[1] = 'a';
+    printf("%c\n", str[1]);
+    str[1] = 'a';
   }
   
   int main(void) {
-      char *mystr = "Hello"; // constant, immutable, read-only
-      char mystr2[] = "Testing"; // mutable
+    char *mystr = "Hello"; // constant, immutable, read-only
+    char mystr2[] = "Testing"; // mutable
   
-      fun(mystr2);
-      printf("%s\n", mystr);
-      printf("%s\n", mystr2);
+    fun(mystr2);
+    printf("%s\n", mystr);
+    printf("%s\n", mystr2);
   }
   ```
 
@@ -163,10 +163,10 @@ void common_factors(int x, int y) {
 
   ```c
   int main(void) {
-  		if (!/*corner case*/) {
-  				// Main body
-  		}
-  		// Handle corner case
+    if (!/*corner case*/) {
+      // Main body
+    }
+    // Handle corner case
   }
   ```
 
@@ -174,18 +174,16 @@ void common_factors(int x, int y) {
 
   ```c
   int main(void) {
-  		if (/*corner case*/) {
-  				// Handle corner case
-  				return
-  		}
-  		
-  		// Main body
+    if (/*corner case*/) {
+      // Handle corner case
+      return
+    }
+  
+    // Main body
   }
   ```
 
-  
-
-- Revisit old problems and come up with better solutions. Be able to explain the tradeoffs involved with each 
+- Revisit old problems and come up with better solutions. Be able to explain the tradeoffs involved with each one
 
 #### Resources
 
