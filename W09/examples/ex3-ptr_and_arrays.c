@@ -1,4 +1,4 @@
-/* 
+/*
 1. Relationship between arrays and pointers
  - Understand that arrays are simply passed as pointers between function calls
  */
@@ -20,7 +20,7 @@ int main(void) {
     // Notice that we can use arithmetic (addition and subtraction to get at any values stored before/after the current pointer)
     // This is similar to indexing in arrays - just like indexing in arrays, we can encounter errors if we go too far
     printf("Indexing forwards...\n");
-    printf("%d\n", *ptr++); 
+    printf("%d\n", *ptr++);
     printf("%d\n", *ptr++);
     printf("%d\n", *ptr);
 

@@ -14,19 +14,19 @@ void process(char *to_read, char *to_write, int len) {
     while (*to_read != '\0' && *to_read != '{')  {
         *ptr++ = *to_read++;
     }
-    
+
 
     if (*to_read == '{') {
         to_read++;
-        // find closing brace 
-        
+        // find closing brace
+
         char *closing = to_read;
         int brace_count = 0;
         while (*closing != '}') {
             brace_count++;
             closing++;
         }
-        
+
         char brace_string[brace_count + 1];
         for (int i = 0; i < brace_count; i++) {
             brace_string[i] = to_read[i];
@@ -35,7 +35,7 @@ void process(char *to_read, char *to_write, int len) {
 
         char write_copy[len + 1];
         strcpy(write_copy, to_write);
-        
+
         int write_len = strlen(to_write);
 
         char *token = strtok(brace_string, ",");
@@ -45,8 +45,8 @@ void process(char *to_read, char *to_write, int len) {
             process(closing + 1, write_copy, len);
 
             token = strtok(NULL, ",");
-        } 
-        
+        }
+
     } else if (*to_read == '\0') {
         printf("'%s', ", to_write);
     }
@@ -64,7 +64,7 @@ void expand_braces(char *to_read) {
 }
 
 int main(void) {
-    
+
     {
         printf("Test 1: \n");
         char *string = "abcde";

@@ -8,7 +8,7 @@ int main(void){
 
     int binary_num = 0;
     int i = 0;
-    
+
     while (num != 0) {
         binary_num += (num % 2) * pow(10, i);
         num /= 2;

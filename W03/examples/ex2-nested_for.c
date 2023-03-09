@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/* 
+/*
 Understand how to nest a loop inside another loop
  */
 

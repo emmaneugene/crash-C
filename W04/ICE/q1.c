@@ -10,6 +10,6 @@ int main(void){
     for (int i = 7; i <= n; i += 7) {
         sum_of_multiples += i;
     }
-    
+
     printf("%ld\n", sum_of_multiples);
 }

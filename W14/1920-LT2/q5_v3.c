@@ -3,7 +3,7 @@
  * Email: emmanueloh.2019@sis.smu.edu.sg
  */
 
-/* 
+/*
     model answer
 */
 
@@ -133,6 +133,6 @@ int main() {
         printf("Time taken: %fs\n", time_spent);
         printf("\n");
     }
-    
-    
+
+
 }

@@ -1,4 +1,4 @@
-/* 
+/*
 Objectives:
 1. Understand how to initialise arrays
 2. Variable length arrays
@@ -25,7 +25,7 @@ int main(void) {
     // thus, we cannot do this for a variable length array
     int x[3] = {0};
 
-    // variable length arrays can be used as well, 
+    // variable length arrays can be used as well,
     int n;
     printf("Enter n:");
     scanf("%d", &n);

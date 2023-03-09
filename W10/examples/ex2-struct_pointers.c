@@ -1,4 +1,4 @@
-/* 
+/*
 1. Use pointers to store struct addresses
 2. Note the struct datatypes are passed by value between functions
 3. Use pointers to pass by reference
@@ -27,15 +27,15 @@ int main(void) {
 
     // Declare a pointer to that point
     point* ptr = &coords;
-    
-    /* 
+
+    /*
     Operator precedence:
     HIGH PRECEDENCE
-    . - Member access via object name 
+    . - Member access via object name
     * - Indirection operator
-    LOW PRECEDENCE 
+    LOW PRECEDENCE
     */
-   
+
     printf("Coordinates: (%d, %d)\n", (*ptr).x,  (*ptr).y);
 
     // Alternatively, you can use the -> operator to access a member of an object within a pointer

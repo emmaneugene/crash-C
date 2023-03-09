@@ -14,7 +14,7 @@ int intersection_of_2(int arr1Size, int arr1[], int arr2Size, int arr2[], int **
     quicksort(arr2, 0, arr2Size - 1);
 
     *result = malloc(min(arr1Size, arr2Size) * sizeof(int));
-    
+
     int ind1 = 0;
     int ind2 = 0;
     int resultSize = 0;
@@ -101,7 +101,7 @@ int partition(int arr[], int lo, int hi) {
     int pivot = arr[hi];
     int i = lo;
     int temp;
-    
+
     for (int j = i; j < hi; j++) {
         if (arr[j] < pivot) {
             temp = arr[i];

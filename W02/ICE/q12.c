@@ -38,7 +38,7 @@ int main(void){
         printf("Number of 1c: %d\n", amt_cents / 1);
     }
 
-    /* 
+    /*
     Test cases          Expected output
     -----------------------------------
     5.1                 $1: 5

@@ -2,7 +2,7 @@
 
 int reverse_num(int num) {
     // Takes in a number, positive or negative, and returns that number written backwards
-    // If the number has trailing zeros, they will be eliminated 
+    // If the number has trailing zeros, they will be eliminated
     // e.g. 9600 becomes 69
     int reversed_num = 0;
 
@@ -26,4 +26,3 @@ int main(void) {
     printf("Number: 9600\n");
     printf("Reverse: %d\n", reverse_num(9600));
 }
-    

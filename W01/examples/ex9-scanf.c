@@ -1,4 +1,4 @@
-/* 
+/*
 1. Understand that each variable has a specific address in memory
 2. Learn how to use the scanf function to read from stdin
  */
@@ -11,13 +11,13 @@ int main(void){
 
     // getting user to input an int
     int x;
-    double y; 
+    double y;
     printf("Enter an integer x: ");
     scanf("%d", &x); // ampersand to specify memory location
                      // but why must we specify memory location?
     printf("Enter an float y: ");
-    scanf("%lf", &y); 
-    
+    scanf("%lf", &y);
+
     printf("Integer x is %d\n", x);
     printf("Float y is %lf\n", y);
 
@@ -28,7 +28,7 @@ int main(void){
                         // otherwise once you hit enter the next scanf will take \n as the intended character
     printf("Enter character 2: ");
     scanf(" %c", &ch2);
-    
+
     printf("Character 1 is %c\n", ch1);
     printf("Character 2 is %c\n", ch2);
 

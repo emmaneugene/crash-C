@@ -4,7 +4,7 @@
  */
 
 #include <stdio.h>
-/* 
+/*
 An exercise in thinking with recursion
 
 what is steal(n)?
@@ -28,7 +28,7 @@ int steal(int worth[], int num) {
 
 int main(void) {
     {
-        printf("Test 1\n"); 
+        printf("Test 1\n");
         printf("Expected:1\n");
         int worth[1] = {1};
         printf("Actual  :%d\n", steal(worth, 1));

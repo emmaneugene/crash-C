@@ -5,7 +5,7 @@ int partition(int arr[], int lo, int hi);
 void quicksort(int arr[], int lo, int hi);
 
 void union_of_2(int arr1Size, int arr1[], int arr2Size, int arr2[], int result[]) {
-    // Copy 
+    // Copy
     int ind = 0;
     for (int i = 0; i < arr1Size; i++) {
         result[ind++] = arr1[i];
@@ -14,7 +14,7 @@ void union_of_2(int arr1Size, int arr1[], int arr2Size, int arr2[], int result[]
     for (int i = 0; i < arr2Size; i++) {
         result[ind++] = arr2[i];
     }
-    
+
     // Sort
     quicksort(result, 0, ind - 1);
 }
@@ -93,7 +93,7 @@ int partition(int arr[], int lo, int hi) {
     int pivot = arr[hi];
     int i = lo;
     int temp;
-    
+
     for (int j = i; j < hi; j++) {
         if (arr[j] < pivot) {
             temp = arr[i];

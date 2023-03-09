@@ -10,7 +10,7 @@ int size(node* start_pointer) {
     if (start_pointer == NULL) {
         return 0;
     }
-    
+
     int count = 0;
 
     // Go from start_pointer to the next pointer, until start_pointer->next == NULL

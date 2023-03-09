@@ -10,7 +10,7 @@ int *store_num_in_array(int num) {
         num_copy /= 10;
         length++;
     }
-    
+
     int *num_array = calloc(length, sizeof(int));
 
     // Copy number into array
@@ -18,7 +18,7 @@ int *store_num_in_array(int num) {
         num_array[i] = num % 10;
         num /= 10;
     }
-    return num_array; 
+    return num_array;
 }
 
 int main(void) {

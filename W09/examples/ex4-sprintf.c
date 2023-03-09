@@ -6,7 +6,7 @@ int main(void) {
     It takes in 3 arguments:
     1 - Buffer to write to
     2 - Format specifier for content to write (e.g. "%s" , "%d", "%c", ...)
-    3 - What we want to write 
+    3 - What we want to write
     Format: int sprintf(char *str, const char *format, ...)
     */
 

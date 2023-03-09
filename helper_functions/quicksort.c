@@ -5,7 +5,7 @@ int partition(int arr[], int lo, int hi) {
     int pivot = arr[hi];
     int i = lo;
     int temp;
-    
+
     for (int j = i; j < hi; j++) {
         if (arr[j] < pivot) {
             temp = arr[i];
@@ -14,7 +14,7 @@ int partition(int arr[], int lo, int hi) {
             i++;
         }
     }
-    
+
     temp = arr[i];
     arr[i] = arr[hi];
     arr[hi] = temp;

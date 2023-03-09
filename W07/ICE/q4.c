@@ -32,9 +32,9 @@ double get_median(int numbers[], int length) {
     if (length == 0) {
         return 0;
     }
-    
+
     bubble_sort(numbers, length);
-    
+
     double median = (double)numbers[length/2];
     if (length % 2 == 0) {
         median += (double)numbers[length/2 - 1];

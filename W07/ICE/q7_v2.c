@@ -59,5 +59,5 @@ int main(void) {
 
 
 // Sample Run 3:
-// Enter the string : 
-// The string "bad, chocolate dab" is not a palindrome 
+// Enter the string :
+// The string "bad, chocolate dab" is not a palindrome

@@ -23,7 +23,7 @@ void print_snake(char start, char end, int len, int width) {
     // How many "blocks" of the snake need to be printed
     int num_blocks = len / (width + 1);
     // Characters leftover
-    int leftover = len % (width + 1); 
+    int leftover = len % (width + 1);
     // Print the leftover
     len--;
     if (leftover > 0) {
@@ -39,7 +39,7 @@ void print_snake(char start, char end, int len, int width) {
             for (int i = 1; i <= leftover; i++) {
                 printf("%c", characters[(len + i) % charset_len]);
             }
-            
+
         }
         printf("\n");
     }

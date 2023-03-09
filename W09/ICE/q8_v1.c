@@ -20,7 +20,7 @@ int my_strspn(char str1[], char str2[]) {
         if (!char_exists) {
             return count;
         }
-        
+
     }
     return count;
 }

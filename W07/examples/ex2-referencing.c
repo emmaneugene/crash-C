@@ -1,4 +1,4 @@
-/* 
+/*
 Distinction between passing by reference and passing values
  */
 
@@ -21,7 +21,7 @@ int main(void) {
     int x = 3;
     do_x(x);
     printf("%d\n", x);
-    /* 
+    /*
     x (int datatype) is passed as a value. this means that the variable x within do_x() has a different memory
     address compared to x within main()
     */
@@ -31,7 +31,7 @@ int main(void) {
     for (int i = 0; i < 3; i++) {
         printf("%d\n", y[i]);
     }
-    /* 
+    /*
     what does this illustrate?
     when arrays are passed into a function, they are passed as reference(address in memory) instead of as values.
     the array within do_y() has the same address as the one in main()

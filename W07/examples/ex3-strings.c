@@ -1,4 +1,4 @@
-/* 
+/*
 Strings
 1. How to declare them
 2. End of line character '\0'

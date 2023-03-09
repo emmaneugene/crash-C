@@ -23,7 +23,7 @@ void concat_string(char string1[], char string2[]) {
     while (string1[start] != 0) {
         start++;
     }
-    
+
     int len = strlen(string2);
     for (int i = 0; i < len; i++) {
         string1[start + i] = string2[i];

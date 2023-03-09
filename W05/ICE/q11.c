@@ -7,7 +7,7 @@ bool are_all_prices_higher_than(int numbers[], int n, int min){
             return false;
         }
     }
-    
+
     return true;
 }
 
@@ -16,7 +16,7 @@ int main(void) {
         printf("Test 1\n");
         int values[5] = {1, 2, 9, 10, 12};
         int result = are_all_prices_higher_than(values, 5, 5);
-        printf("Expected:Fail\n"); 
+        printf("Expected:Fail\n");
         printf("Actual  :%s\n\n",  result ? "Pass" : "Fail");
     }
 

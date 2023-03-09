@@ -28,7 +28,7 @@ int main(void){
 
     printf("Tax payable: $%.1lf\n", tax_payable);
 
-    /* 
+    /*
     Test cases          Expected output
     -----------------------------------
     350 000             51150.0

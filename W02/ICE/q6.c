@@ -10,7 +10,7 @@ int main(void){
 
     printf("Enter side b:");
     scanf("%d", &side_b);
-    
+
     printf("Enter side c:");
     scanf("%d", &side_c);
 
@@ -19,8 +19,8 @@ int main(void){
     } else {
         printf("It is an invalid triangle.\n");
     }
-    
-    /* 
+
+    /*
     Test cases          Expected output
     -----------------------------------
     7                   valid
@@ -33,7 +33,7 @@ int main(void){
     -----------------------------------
     10                  invalid
     20
-    30 
+    30
     -----------------------------------
      */
 }

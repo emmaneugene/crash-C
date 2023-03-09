@@ -53,7 +53,7 @@ void scramble_sentence(char *original, char *scrambled) {
             start++;
         }
     }
-}    
+}
 
 int main(void) {
     {
@@ -93,4 +93,3 @@ int main(void) {
         printf("Scrambled:%s\n", scrambled);
     }
 }
- 

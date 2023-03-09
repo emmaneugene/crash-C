@@ -12,8 +12,8 @@ int main(void){
 
     double bmi = weight / (height * height); // calculate BMI
 
-    printf("BMI is %.6lf\n", bmi); 
-    
+    printf("BMI is %.6lf\n", bmi);
+
     // go from largest to smallest value for BMI
     if (bmi >= 30) {
         printf("You are considered obese.\n");
@@ -25,7 +25,7 @@ int main(void){
         printf("You are considered underweight.\n");
     }
 
-    /* 
+    /*
     Test cases          Expected output
     -----------------------------------
     weight = 100        obese

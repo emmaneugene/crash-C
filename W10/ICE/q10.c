@@ -7,7 +7,7 @@ void py_slice(char *orig, char *dest, int start, int end, int step) {
         *dest = '\0';
         return;
     }
-    
+
     int len = strlen(orig);
 
     // Make sure start <= len - 1(inclusive)
@@ -19,7 +19,7 @@ void py_slice(char *orig, char *dest, int start, int end, int step) {
     if (end > len + 1) {
         end = len + 1;
     }
-    
+
     if (step > 0) {
         // Slice forwards
         for (int i = start; i < end; i += step) {
@@ -104,7 +104,7 @@ int main(void) {
         printf("Actual  :>%s<\n", dest);
         printf("\n");
     }
-    
+
     {
         char orig[] = "ABCDEFGHIJ";
         char dest[11];

@@ -9,7 +9,7 @@ bool is_perfect_num(int num){
             sum_of_factors += i;
         }
     }
-    
+
     return sum_of_factors == num;
 }
 
@@ -48,7 +48,7 @@ int main(void) {
         printf("Expected:Fail\n");
         printf("Actual  :%s\n\n", result ? "Pass" : "Fail");
     }
- 
+
     {
         printf("Test 6\n");
         int result = is_perfect_num(-8128);

@@ -1,10 +1,10 @@
-/* 
+/*
 Learn to use the switch statement
- 
+
 switch (expression)
 {
 case  <constant-expression> :
-    code 
+    code
     break;
 
 default:
@@ -24,7 +24,7 @@ int main(void){
         printf("Red\n");
         color = 'G';
         break; // you must insert a break at every point, otherwise the following lines of code will be executed as well
-    case 'G' : 
+    case 'G' :
         printf("Green\n");
         color = 'B';
         break;

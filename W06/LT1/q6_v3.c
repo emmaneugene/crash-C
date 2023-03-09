@@ -4,7 +4,7 @@
  */
 
 #include <stdio.h>
-/* 
+/*
 2 variables, temp and current_greatest
 Increment one by one through the array
 compare if temp + worth[i] > current_greatest
@@ -40,7 +40,7 @@ int steal(int worth[], int num) {
 
 int main(void) {
     {
-        printf("Test 1\n"); 
+        printf("Test 1\n");
         printf("Expected:1\n");
         int worth[1] = {1};
         printf("Actual  :%d\n", steal(worth, 1));

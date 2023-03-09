@@ -75,7 +75,7 @@ void print_list(node *ptr) {
     printf("\n");
 }
 
-// free 
+// free
 void free_linked_list(node *ptr) {
     node *prev;
     while (ptr != NULL) {

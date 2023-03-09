@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(void) { 
+int main(void) {
     int n;
     printf("Enter n:");
     scanf("%d", &n);
@@ -19,6 +19,6 @@ int main(void) {
         prev_num = next_num; // increment the previous term
         next_num += temp_num; // get the new next term
     }
-    
+
     printf("\n");
 }

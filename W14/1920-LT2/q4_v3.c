@@ -129,7 +129,7 @@ bool is_anagram(char *str1, char *str2) {
 }
 
 void correct_word(char *word, char *dict[], int n) {
-    
+
     for (int i = 0; i < n; i++) {
         if (is_anagram(word, dict[i])) {
             strcpy(word, dict[i]);

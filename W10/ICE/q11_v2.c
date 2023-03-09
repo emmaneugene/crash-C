@@ -28,7 +28,7 @@ bool is_anagram(char *str1, char *str2) {
             return false;
         }
     }
-    
+
     return true;
 }
 
@@ -37,7 +37,7 @@ int main(void) {
         printf("Test 1:%s\n", is_anagram("listen","silent") ? "Pass" : "Fail");
         printf("\n");
     }
-    
+
     {
         printf("Test 2:%s\n", is_anagram("rail safety", "fairy tales") ? "Pass" : "Fail");
         printf("\n");
@@ -58,4 +58,3 @@ int main(void) {
         printf("\n");
     }
 }
-

@@ -55,6 +55,6 @@ int main(void) {
     printf("Expected: 31\n");
     printf("Actual  : ");
     printf("%d\n", get_num_days_between(1, 2, 1970, 1, 1, 1970));
- 
+
     printf("%d\n", get_num_days_between(16, 12, 2019, 16, 12, 2020));
 }

@@ -7,7 +7,7 @@ bool is_infinite_number(int num) {
         return false;
     if (num == 4)
         return true;
-    
+
     int new_num = 0;
     while (num != 0) {
         new_num += pow(num % 10, 2);

@@ -8,7 +8,7 @@ void merge(char* string1, char* string2, char* combined) {
         if (*string1 != '\0') {
             *combined++ = *string1++;
         }
-        
+
         if (*string2 != '\0') {
             *combined++ = *string2++;
         }
@@ -50,7 +50,7 @@ int main(void) {
         printf("Actual  :%s\n", combined);
         printf("\n");
     }
-    
+
     {
         char *content1 = "strawberry";
         char *content2 = "";

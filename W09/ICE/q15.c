@@ -17,7 +17,7 @@ bool verify(char* card) {
                 next_digit -= 9;
             }
         }
-        
+
         // Add to checksum, increment variables
         checksum += next_digit;
         count++;

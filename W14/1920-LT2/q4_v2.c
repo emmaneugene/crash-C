@@ -133,7 +133,7 @@ bool is_anagram(char *str1, char *str2) {
         char_array[*str1 - 'a']++;
         str1++;
     }
-    
+
     while (*str2) {
         char_array[*str2 - 'a']--;
         str2++;

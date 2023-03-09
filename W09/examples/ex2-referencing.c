@@ -1,4 +1,4 @@
-/* 
+/*
 Recap: Pass by value vs pass by reference
  */
 
@@ -14,7 +14,7 @@ void swap_by_reference(int *x, int *y) {
     // This function does not receive the values, it receives pointers to the 2 values
     // The pointers themselves are not changed, they are made to store different int values
     // Addresses remain the same, but values stored in the address are reassigned
-    int temp = *x; 
+    int temp = *x;
     *x = *y;
     *y = temp;
 }

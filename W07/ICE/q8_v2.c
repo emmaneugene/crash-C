@@ -14,7 +14,7 @@ int count_num_vowels(char sentence[]) {
             case 'u':
                 count++;
         }
-        sentence++; 
+        sentence++;
     }
     return count;
 }

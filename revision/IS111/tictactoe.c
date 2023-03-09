@@ -6,13 +6,13 @@ int game_won(int positions[]) {
     for (int i = 0; i < 9; i += 3) {
         if (positions[i] == positions[i + 1] && positions[i + 1] == positions[i + 2]) {
             return positions[i];
-        } 
+        }
     }
     // check cols
     for (int i = 0; i < 3; i++) {
         if (positions[i] == positions[i + 3] && positions[i + 3] == positions[i + 6]) {
             return positions[i];
-        } 
+        }
     }
     // check diagonals
     if (positions[0] == positions[4] && positions[4] == positions[8]) {
@@ -38,7 +38,7 @@ bool game_over(int positions[]) {
 void print_board(int positions[]) {
     // 0 = ' ', 1 = 'X', 2 = 'O'
     printf("=======\n");
-    
+
     for (int i = 0; i < 9; i++) {
         if (i % 3 == 0) {
             printf("|");
@@ -79,11 +79,11 @@ int main(void) {
             printf("Player %c, choose position :", turns % 2 == 0 ? 'X' : 'O');
             scanf("%d", &position);
         } while (positions[position - 1]);
-        
+
         positions[position - 1] = turns % 2 + 1;
         print_board(positions);
         printf("\n");
-        
+
         turns++;
     }
 

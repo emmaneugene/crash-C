@@ -21,22 +21,22 @@ int rearrange_digits(int num, int pivot) {
         num_length ++;
         num_copy /= 10;
     }
-    
+
     int num_array[num_length];
-    
+
     // Copy the number into an array
     for (int i = num_length - 1; i >= 0; i--) {
         num_array[i] = num % 10;
         num /= 10;
     }
-    
+
     int sum_larger = 0;
     int sum_larger_power = 0;
     int sum_equal = 0;
     int sum_equal_power = 0;
     int sum_lesser = 0;
     int sum_lesser_power = 0;
-    
+
 
     // Iterate over the array from front to back and add into the respective sums
     for (int j = 0; j < num_length; j++) {

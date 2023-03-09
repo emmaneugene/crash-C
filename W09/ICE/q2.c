@@ -33,7 +33,7 @@ void print_largest_two(int values[], int n) {
     for (int i = 2; i < n; i++) {
         compare_values(&max1, &max2, values[i]);
     }
-    
+
     // Print our maximum 2 values in order
     printf("#1 = %d, #2 = %d", max1, max2);
 }

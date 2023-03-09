@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(void) { 
+int main(void) {
     int rows;
     printf("rows>");
     scanf("%d", &rows);

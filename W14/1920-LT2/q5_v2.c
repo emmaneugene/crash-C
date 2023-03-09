@@ -6,7 +6,7 @@
 #include <stdio.h>
 #include <time.h>
 
-/* 
+/*
  Create an list items we want to buy (array of structs)
  Sort all items by order of worth (score/price)
  Iterate through items {
@@ -47,7 +47,7 @@ double get_max_score(int budget, int n, double prices[], double insta_scores[]) 
     for (int i = 0; i < n; i++) {
         potatoes[i].price = prices[i];
         potatoes[i].score = insta_scores[i];
-        // corner case for price = 0 is worth = 0 
+        // corner case for price = 0 is worth = 0
         if (prices[i] == 0) {
             potatoes[i].worth = 0;
         } else {
@@ -152,7 +152,7 @@ int main() {
         printf("Time taken: %fs\n", time_spent);
         printf("\n");
     }
-    
+
     {
         double insta_score[3] = {16, 15, 14};
         double price[3] = {15, 15, 10};

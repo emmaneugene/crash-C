@@ -14,20 +14,20 @@ typedef struct {
 
 date get_current_year() {
     // there is no need to understand the code in this method
-    time_t rawtime;   
+    time_t rawtime;
     time ( &rawtime );
     struct tm *timeinfo = localtime ( &rawtime );
-    
+
     date current = {timeinfo->tm_mday, timeinfo->tm_mon + 1, 1900 + timeinfo->tm_year};
     return current;
 }
 
 int get_age (student *s) {
-    date current_date = get_current_year(); 
+    date current_date = get_current_year();
     // Get minimum age based on year
     int age = current_date.year - (s->birthday->year) - 1;
 
-    
+
     if (current_date.month > s->birthday->month) {
         // Did they pass the month?
         age++;
@@ -35,7 +35,7 @@ int get_age (student *s) {
         // If same month, did they pass the date?
         age++;
     }
-    
+
     return age;
 }
 

@@ -21,9 +21,9 @@ int main(void) {
     checksum += (nric[5] - '0') * 4;
     checksum += (nric[6] - '0') * 3;
     checksum += (nric[7] - '0') * 2;
-    
+
     checksum %= 11;
-    
+
     char last_letter = '\0';
 
     if (nric[0] == 'S' || nric[0] == 'T') {

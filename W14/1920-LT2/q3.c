@@ -38,7 +38,7 @@ void cut_queue(customer **first_customer, customer *queue_cutter, char *unlucky_
     if (to_cut == NULL) {
         return;
     }
-    
+
     // Insert cutter
     in_front->next_customer = queue_cutter;
     queue_cutter->next_customer = to_cut;

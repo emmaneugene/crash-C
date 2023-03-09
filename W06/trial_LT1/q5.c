@@ -1,8 +1,8 @@
 /**
- * 
+ *
  * Name: Emmanuel Oh Eu-Gene
  * Email: emmanueloh.2019@sis.smu.edu.sg
- * 
+ *
  */
 
 #include <stdio.h>
@@ -16,7 +16,7 @@ int get_smallest_pair(num) {
     // Declare variable for next pair
     int next_pair;
     // Remove the trailing digit before we enter the loop
-    
+
     while (num >= 10) {
         next_pair = num % 100;
         if (next_pair < smallest_pair) {

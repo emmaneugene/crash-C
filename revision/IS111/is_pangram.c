@@ -5,7 +5,7 @@
 
 bool is_pangram(char *sentence) {
     int char_tracker[26] = {0};
-    
+
     int temp = 0;
     while (*sentence != '\0') {
         if(isalpha(*sentence)) {

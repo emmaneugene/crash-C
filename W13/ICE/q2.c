@@ -7,7 +7,7 @@ void trim(char *sentence) {
     while (*ptr == ' ') {
         ptr++;
     }
-    
+
     // Trim the end
     int end = strlen(sentence);
     while (sentence[end - 1] == ' ') {

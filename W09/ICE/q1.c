@@ -7,7 +7,7 @@ long int add_or_multiply(int values[], int n, char op) {
     if (n == 0) {
         return 0;
     }
-    
+
     int sum = values[0];
 
     if (op == '+') {
@@ -19,7 +19,7 @@ long int add_or_multiply(int values[], int n, char op) {
             sum *= values[i];
         }
     }
-    
+
     return sum;
 }
 

@@ -1,9 +1,9 @@
-/* 
+/*
 1. Understand the basics of while loops
 2. Understand how to use logical operators in C
 3. Understand DeMorgan's theorem
 *** this is INCREDIBLY important when thinking about NEGATING AND(&&) or OR(||) conditions
-4. Understand the fencepost technique 
+4. Understand the fencepost technique
  */
 
 #include <stdio.h>
@@ -11,7 +11,7 @@
 int main(void){
     int x_1 = 5;
     // prints out "Small" 5 times, until the boolean == false
-    while (x_1 < 10) { 
+    while (x_1 < 10) {
         printf("Small\n");
         x_1++;
     }
@@ -24,7 +24,7 @@ int main(void){
         }
         printf("%d\n", i);
     }
-    
+
     int count = 5;
     // this prints count 5 times, contrary to what you would think
     while (count-- > 0) {

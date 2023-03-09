@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/* 
+/*
 Understand the 3 elements of a for-loop:
 1. Initialisation of variable (need not be int, can be char or double as well)
 2. Condition (if false, break out of the loop) - this implies that the loop will run forever is the condition is not made false

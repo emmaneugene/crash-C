@@ -6,7 +6,7 @@ int *get_max_sum_sublist(int numbers[], int n, int k) {
     if (k > n) {
         return NULL;
     }
-    
+
     int *max_sublist = &numbers[0];
 
     int max_sum = 0;

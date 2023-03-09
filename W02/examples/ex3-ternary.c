@@ -1,9 +1,9 @@
-/* 
-Understand how the ternary operator works 
+/*
+Understand how the ternary operator works
 (boolean ? <value if True> : <value if False>)
 the ternary operator can be used in the place of a basic if-else statement, if you are evaluating one bool
  condition
-*/ 
+*/
 
 #include <stdio.h>
 

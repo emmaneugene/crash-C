@@ -18,7 +18,7 @@ int rearrange_digits(int num, int pivot) {
     int lesser = 0;
     int lesser_multiplier = 1;
     int temp = 0;
-    
+
 
     while (num > 0) {
         temp =  num % 10;

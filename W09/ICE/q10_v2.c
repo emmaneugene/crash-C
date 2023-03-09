@@ -17,7 +17,7 @@ void run_length_encode(char* input, char* output) {
 
         // Write the count into output
         output += sprintf(output, "%d", count);
-    }   
+    }
 }
 
 int main(void) {

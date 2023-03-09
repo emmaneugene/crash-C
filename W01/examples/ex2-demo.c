@@ -8,7 +8,7 @@ when you use code runner to run a piece of code (for example demo.c), it does 3 
 
 cd "mnt/c/workspace/CS101/week1" -> change directory to the directory that the file is located in
 
-&& clang -Wall demo.c -o demo -> asks clang compiler to compile the source code and specifies the name of the output. -Wall gets the compiler to output all 
+&& clang -Wall demo.c -o demo -> asks clang compiler to compile the source code and specifies the name of the output. -Wall gets the compiler to output all
 warnings or errors encountered
 
 && "mnt/c/workspace/CS101/week1/"demo -> runs the compiled binary

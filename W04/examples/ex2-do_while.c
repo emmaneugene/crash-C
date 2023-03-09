@@ -1,4 +1,4 @@
-/* 
+/*
 Understand the concept of a do while loop
 
 |    while               |    do while            |
@@ -18,6 +18,6 @@ int main(void){
         printf("Do you love me? ");
         scanf(" %c", &response);
     } while (response != 'Y'&& response != 'y');
-    
+
     printf("Thank you!\n");
 }

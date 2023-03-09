@@ -1,4 +1,4 @@
-/*  
+/*
 Objectives:
 1. Use the bool 'datatype'
 2. Use comparison operators (<, <=, >, >=, == , !=)

@@ -9,12 +9,12 @@ void get_array_size(int numbers[]) {
     printf("Size of numbers[]: %lu bytes\n", sizeof(numbers));
     printf("Size of int      : %lu bytes\n", sizeof(int));
     printf("Size of numbers[] / int: %lu \n", sizeof(numbers) / sizeof(int) );
-    
+
 }
 
 int main(void) {
     // arrays "decay" into a pointer when passed into a function
-    // therefore, we should pass in the length of an array into the function, 
+    // therefore, we should pass in the length of an array into the function,
     int numbers[] = {1, 2, 3, 4, 5, 6, 7, 8};
     printf("Within main()\n");
     printf("Size of numbers[]: %lu bytes\n", sizeof(numbers));

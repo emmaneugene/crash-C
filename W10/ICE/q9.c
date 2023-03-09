@@ -9,7 +9,7 @@ bool is_good_password(char *password) {
     bool lowercase = false;
     bool uppercase = false;
     bool number = false;
-    
+
     while (*password != '\0') {
         if (islower(*password)) {
             lowercase = true;

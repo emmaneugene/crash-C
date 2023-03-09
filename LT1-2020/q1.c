@@ -1,15 +1,15 @@
 #include <stdio.h>
 
 void sum_of_neighbours(int numbers[], int length) {
-    if (numbers == NULL || length <= 1) 
+    if (numbers == NULL || length <= 1)
         return;
-    
+
     int tmp[length];
 
     tmp[0] = numbers[0] + numbers[1];
 
     for (int i = 1; i < length - 1; i++) {
-        tmp[i] = numbers[i-1] + numbers[i] + numbers[i+1];        
+        tmp[i] = numbers[i-1] + numbers[i] + numbers[i+1];
     }
 
     tmp[length-1] = numbers[length-2] + numbers[length-1];
@@ -41,7 +41,7 @@ int main(void) {
     printf("Actual  : ");
     sum_of_neighbours(arr2, sizeof(arr2)/sizeof(int));
     print_array(arr2, sizeof(arr2)/sizeof(int));
-    
+
 
     int arr3[] = {10, 20, 30, 40};
     printf("Expected: 30 60 90 70\n");

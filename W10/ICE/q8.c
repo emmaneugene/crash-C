@@ -20,7 +20,7 @@ int get_middle(node *reading_pointer) {
     while (reading_pointer->next != NULL) {
         reading_pointer = reading_pointer ->next;
         tracking_count++;
-        
+
         if (assigning_count !=  tracking_count / 2 + 1) {
             middle_pointer = middle_pointer->next;
             assigning_count++;
@@ -51,7 +51,7 @@ int main(void) {
         printf("\n");
     }
 
-    {   
+    {
         // 3 -> 7 -> 5
         node last = {5, NULL};
         node second = {7, &last};
@@ -63,7 +63,7 @@ int main(void) {
     }
 
     {
-        // 3 -> 2 
+        // 3 -> 2
         node last = {2, NULL};
         node head = {3, &last};
         printf("Test 3\n");

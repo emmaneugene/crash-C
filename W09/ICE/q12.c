@@ -33,7 +33,7 @@ bool is_sorted(int numbers[], int count) {
             }
         }
     }
-    
+
     return true;
 }
 

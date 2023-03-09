@@ -26,7 +26,7 @@ double process_order(int inv_count, inv_line_item *inventory, int order_count, o
         valid_order = false;
         for (int j = 0; j < inv_count; j++) {
             if (strcmp(order[i].name, inventory[j].name) == 0 && order[i].quantity <= inventory[i].quantity) {
-                valid_order = true;                
+                valid_order = true;
             }
         }
 
@@ -35,7 +35,7 @@ double process_order(int inv_count, inv_line_item *inventory, int order_count, o
         }
     }
 
-    double price = 0;    
+    double price = 0;
 
     // Second pass: process order
     for (int i = 0; i < order_count; i++) {

@@ -59,7 +59,7 @@ char *convert_postfix(char *exp) {
             }
             stk[stk_idx++] = *exp;
         }
-        
+
         exp++;
     }
 

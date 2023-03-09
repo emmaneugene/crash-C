@@ -31,7 +31,7 @@ double process_order(int inv_count, inv_line_item *inventory, int order_count, o
                     return 0;
                 } else {
                     inventory[j].quantity -= order[i].quantity;
-                    price += order[i].quantity * inventory[j].price; 
+                    price += order[i].quantity * inventory[j].price;
                 }
             }
         }

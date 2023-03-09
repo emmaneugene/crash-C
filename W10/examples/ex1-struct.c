@@ -1,4 +1,4 @@
-/* 
+/*
 1. What is a structure in C
 2. Structure declaration
 3. Typedef

@@ -1,4 +1,4 @@
-/* 
+/*
 1. Use malloc()/calloc() to dynamically allocate memory
    malloc() - used to allocate space for a memory block
    calloc() - used to allocate space for an array in memory

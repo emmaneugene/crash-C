@@ -8,10 +8,10 @@ typedef struct {
 } point;
 
 /*
- Function that checks if two points are adjacent. 
- 
+ Function that checks if two points are adjacent.
+
  Returns true if:
- - both points share the same x pos with 1 point difference in y pos 
+ - both points share the same x pos with 1 point difference in y pos
  - both points share the same y pos with 1 point difference in x pos
 
  Returns false otherwise
@@ -27,16 +27,16 @@ bool is_adjacent(point a, point b) {
 }
 
 /*
- 
+
 */
 void get_longest_sequence(int rows, int cols, int grid[][cols]) {
-    // Iterate through the a x b grid once, in order to create an array where 
-    // index corresponds to numbers and value corresponds to coordinates 
+    // Iterate through the a x b grid once, in order to create an array where
+    // index corresponds to numbers and value corresponds to coordinates
 
     // Example:
-    // value: | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 
-    // x-pos: | ? | ? | ? | ? | ? | ? | ? | ? | ? | 
-    // y-pos: | ? | ? | ? | ? | ? | ? | ? | ? | ? | 
+    // value: | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
+    // x-pos: | ? | ? | ? | ? | ? | ? | ? | ? | ? |
+    // y-pos: | ? | ? | ? | ? | ? | ? | ? | ? | ? |
     point point_index[rows * cols];
 
     for (int i = 0; i < rows; i++) {
@@ -49,7 +49,7 @@ void get_longest_sequence(int rows, int cols, int grid[][cols]) {
     // Iterate through point_index to find the longest adjacent streak
     int longest_streak = 1;
     int start_num = 1;
-    
+
     int curr_streak = 1;
     int curr_num = 1;
 
@@ -75,7 +75,7 @@ void get_longest_sequence(int rows, int cols, int grid[][cols]) {
         printf("%d ", start_num++);
     }
     printf("\n");
-       
+
 }
 
 

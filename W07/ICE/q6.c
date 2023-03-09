@@ -2,9 +2,9 @@
   Top-Down Design
   This may be a problem that is too complicated to solve by one function alone.
   1. Try breaking the problem down into sub-problems. Each sub-problem is a helper function.
-  2. To identify a sub-problem, start writing the algorithm out. 
+  2. To identify a sub-problem, start writing the algorithm out.
   3. When you get to a step that seems too complicated, imagine you have a helper function that can solve that step.
-     See if you can write the function by including a call to this imaginary function, 
+     See if you can write the function by including a call to this imaginary function,
   4. The process can then be repeated on the helper functions until the solution is complete.
 */
 #include <stdio.h>
@@ -15,7 +15,7 @@ double average(int values[], int len) {
     // Corner case
     if (len < 1) {
         return sum;
-    } 
+    }
 
     for (int i = 0; i < len; i++) {
         sum += values[i];
@@ -38,7 +38,7 @@ double calculate_variance(int numbers[], int len) {
     for (int i = 0; i < len; i++) {
         sum_of_sq_diff += pow((numbers[i] - mean), 2);
     }
-    
+
     // Divide sum_of_sq_diff by len - 1, and we have our variance
     return sum_of_sq_diff / (len - 1);
 }

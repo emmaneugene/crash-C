@@ -10,7 +10,7 @@ int main(void){
         if (c < 'a') {
             c += 'a' - 'A';
         }
-        
+
         // Check whether c is a vowel or consonant
         if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') {
             printf("vowel\n\n");

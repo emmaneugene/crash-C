@@ -1,4 +1,4 @@
-/* 
+/*
 1. Define a 2-dimensional array
 2. Pass a 2-d array into a function
  */
@@ -16,7 +16,7 @@ int main(void) {
     //     +---+---+---+
     // [1] | 4 | 5 | 7 |
     //     +---+---+---+
-    // 
+    //
     int arr[][3] = {
         {2, 3, 3},
         {4, 5, 7}
@@ -29,7 +29,7 @@ int main(void) {
     // Can we declare 3d arrays? Certainly
     // Generalising, we need to specify all dimensions except the first one
     int arr_3d[][2][2] = {
-        {{1, 2}, {3, 4}}, 
+        {{1, 2}, {3, 4}},
         {{5, 6}, {7, 8}}
         };
     // First element in 3d array

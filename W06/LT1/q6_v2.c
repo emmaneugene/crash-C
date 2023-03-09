@@ -4,7 +4,7 @@
  */
 
 #include <stdio.h>
-/* 
+/*
 2 pointers iterating through the array
 
 ptr_1: [0], [2], [4], ...
@@ -44,7 +44,7 @@ int steal(int worth[], int num) {
 
 int main(void) {
     {
-        printf("Test 1\n"); 
+        printf("Test 1\n");
         printf("Expected:1\n");
         int worth[1] = {1};
         printf("Actual  :%d\n", steal(worth, 1));

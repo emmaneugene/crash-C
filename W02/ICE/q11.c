@@ -15,7 +15,7 @@ int main(void){
     bool is_male = (gend == 'M' || gend == 'm') ? true : false;
 
     // check cases in ascending order of age
-    if (age < 25) { 
+    if (age < 25) {
         premium = is_male ? 20.50 : 30.60;
     } else if (age < 30) {
         premium = is_male ? 30.40 : 50.70;
@@ -27,7 +27,7 @@ int main(void){
 
     printf("Your premium is $%.2lf\n", premium);
 
-    /* 
+    /*
     Test cases          Expected output
     -----------------------------------
     F                   50.70

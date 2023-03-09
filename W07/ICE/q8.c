@@ -11,7 +11,7 @@ int count_num_vowels(char sentence[]) {
         next_char = tolower(sentence[i]);
         if (next_char == 'a' || next_char == 'e' || next_char == 'i' || next_char == 'o' || next_char == 'u') {
             count++;
-        }  
+        }
     }
     return count;
 }

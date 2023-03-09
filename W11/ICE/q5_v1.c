@@ -25,7 +25,7 @@ int intersection_of_2(int arr1Size, int arr1[], int arr2Size, int arr2[], int **
             }
         }
     }
-    
+
     // Sort
     quicksort(*result, 0, resultSize - 1);
 
@@ -102,7 +102,7 @@ int partition(int arr[], int lo, int hi) {
     int pivot = arr[hi];
     int i = lo;
     int temp;
-    
+
     for (int j = i; j < hi; j++) {
         if (arr[j] < pivot) {
             temp = arr[i];

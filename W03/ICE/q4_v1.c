@@ -5,7 +5,7 @@ int main(void) {
     printf("Enter n:");
     scanf("%d", &n);
 
-    int n_fact = 1; 
+    int n_fact = 1;
 
     if (n >= 0) { // user input must be a valid number
         for (int i = 1; i <= n; i ++) {
@@ -13,6 +13,6 @@ int main(void) {
         }
         printf("%d! = %d\n", n, n_fact);
     } else {
-        printf ("Invalid input.\n"); 
+        printf ("Invalid input.\n");
     }
 }

@@ -3,7 +3,7 @@
 int get_num_holes(int n){
     int num_holes = 0;
     int next_digit;
-    
+
     while (n > 0) {
         next_digit = n % 10;
         switch (next_digit) {

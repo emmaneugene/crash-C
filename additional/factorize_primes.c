@@ -28,14 +28,14 @@ void factorize_primes(int num) {
 
     int divisor = 2;
     int power = 0;
-    
+
     while (divisor <= num) {
         if (is_prime(divisor) && num % divisor == 0) {
             while (num % divisor == 0) {
                 num /= divisor;
                 power++;
             }
-            
+
             printf("%d^%d", divisor, power);
             power = 0;
             if (num > 1) {
@@ -69,5 +69,5 @@ int main(void) {
         printf("Actual  : ");
         factorize_primes(108);
     }
-    
+
 }

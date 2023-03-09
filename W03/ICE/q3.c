@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(void) { 
+int main(void) {
     int n; // get user's first input
     printf("Enter n:");
     scanf("%d", &n);

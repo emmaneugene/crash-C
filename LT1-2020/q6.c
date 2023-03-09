@@ -27,7 +27,7 @@ int get_crowd_size(int timings[], int n) {
     }
 
     int max_size = 0;
-    
+
     for (int i = 0; i < entries; i++) {
         int current_time = entry_times[i];
         int current_size = 1;
@@ -52,7 +52,7 @@ int main(void) {
                        700, 800,
                        800, 900 };
     printf("%d\n", get_crowd_size(timings1, sizeof(timings1)/ sizeof(int)));
-    
+
     int timings2[] = { 600, 900,
                        700, 900,
                        800, 900 };

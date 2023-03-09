@@ -5,7 +5,7 @@ int main(void) {
     printf("Enter n:");
     scanf("%d", &n);
 
-    int n_fact = 1; 
+    int n_fact = 1;
 
      // User input must be a valid number
     if (n < 0) {

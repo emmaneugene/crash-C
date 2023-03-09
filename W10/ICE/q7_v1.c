@@ -6,7 +6,7 @@ typedef struct node {
 } node;
 
 int size(node* start_pointer) {
-    
+
     int count = 0;
 
     // Go from start_pointer to the next pointer, until start_pointer == NULL

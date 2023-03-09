@@ -6,21 +6,21 @@ int main(void){
     int n1;
     int n2;
     int n3;
-    
+
     printf("Enter n1:"); // get input
     scanf("%d", &n1);
 
     printf("Enter n2:");
     scanf("%d", &n2);
-    
+
     printf("Enter n3:");
     scanf("%d", &n3);
 
-    smallest_num = n2; 
+    smallest_num = n2;
     largest_num = n1; // assume this at first
 
     if (n1 < n2) {
-        smallest_num = n1; 
+        smallest_num = n1;
         largest_num = n2; // if first comparison is false, swap values
     }
 
@@ -34,7 +34,7 @@ int main(void){
 
     printf("Smallest is %d\nLargest is %d\n", smallest_num, largest_num);
 
-    /* 
+    /*
     Test cases          Expected output
     -----------------------------------
     n1 = 77             smallest: 77

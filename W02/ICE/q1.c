@@ -3,10 +3,10 @@
 int main(void){
     int n1; // declare variables
     int n2;
-    
+
     printf("Enter n1:"); // get input
     scanf("%d", &n1);
-    
+
     printf("Enter n2:");
     scanf("%d", &n2);
 
@@ -16,7 +16,7 @@ int main(void){
         printf("%d is not a factor of %d\n", n1, n2);
     }
 
-    /* 
+    /*
     Test cases          Expected output
     -----------------------------------
     n1 = 3              is a factor

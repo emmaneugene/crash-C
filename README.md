@@ -54,7 +54,7 @@ int main(int argc, char *argv[]) {
 
 - Similar to BODMAS in mathematics, operators in C also have their own levels precedence
 - Find out more about precedence [here](https://www.tutorialspoint.com/cprogramming/c_operators_precedence.htm)
-- If unsure, it never hurts to use parentheses () 
+- If unsure, it never hurts to use parentheses ()
 
 ### 4. Conditionals
 
@@ -79,7 +79,7 @@ void common_factors(int x, int y);
 // Implementation
 void common_factors(int x, int y) {
   int lowest = x < y ? x : y;
-		
+
   for (int i = 2; i <= lowest; i++) {
     if (x % i == 0 && y % i == 0) {
       printf("Common factor: %d\n", i)
@@ -100,7 +100,7 @@ void common_factors(int x, int y) {
 - null reference
 - Passing by *reference* vs passing by *value*
 - Visualizing using memory state diagrams
-- `malloc`, `calloc` and `free` - how do they work? 
+- `malloc`, `calloc` and `free` - how do they work?
 
 ### 8. Strings
 
@@ -112,23 +112,23 @@ void common_factors(int x, int y) {
 
   ```c
   #include <stdio.h>
-  
+
   void fun(char *str) {
     printf("%c\n", str[1]);
     str[1] = 'a';
   }
-  
+
   int main(void) {
     char *mystr = "Hello"; // constant, immutable, read-only
     char mystr2[] = "Testing"; // mutable
-  
+
     fun(mystr2);
     printf("%s\n", mystr);
     printf("%s\n", mystr2);
   }
   ```
 
-  
+
 
 ### 9. Structs
 
@@ -178,7 +178,7 @@ void common_factors(int x, int y) {
       // Handle corner case
       return
     }
-  
+
     // Main body
   }
   ```
@@ -203,5 +203,3 @@ void common_factors(int x, int y) {
 - [Visual Algo](https://visualgo.net/en)
 
 - [Roadmaps](https://roadmap.sh/)
-
-  

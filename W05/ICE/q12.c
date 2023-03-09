@@ -3,7 +3,7 @@
 
 void print_calendar(int num_days, int first_sun) {
     printf("Su Mo Tu We Th Fr Sa\n");
-    
+
     // Print whitespaces if necessary
     if (first_sun > 1) {
         printf("  ");
@@ -11,7 +11,7 @@ void print_calendar(int num_days, int first_sun) {
             printf("   ");
         }
     }
-    
+
     // Print out the rest of the calendar
     for (int j = 1; j <= num_days; j++) {
         // If the number is single digit, print a space
@@ -97,7 +97,7 @@ void print_calendar_for_mth(int mth, int yr){
     } else {
         first_sun = 8 - day_of_week(1, mth, yr);
     }
-    
+
     int num_days;
     switch (mth) {
         case 2:
@@ -124,7 +124,7 @@ int main(void) {
     print_calendar(28, 7);
 
     printf("------------------------------------\n");
-    
+
     printf("Einstein was born on: %d\n\n", day_of_week(14, 3, 1897));
     printf("I was born on: %d\n\n", day_of_week(14, 11, 1997));
     printf("The moon landing was on: %d\n\n", day_of_week(20, 7, 1969));

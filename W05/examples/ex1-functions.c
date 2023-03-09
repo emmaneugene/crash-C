@@ -1,4 +1,4 @@
-/* 
+/*
 Objectives:
 1. Be able to define a function
 2. Understand control flow when a function is invoked
@@ -7,7 +7,7 @@ Objectives:
 #include <stdio.h>
 
 // Function takes in various inputs and RETURNS one output
-// In C, when you don't have any input/output, you can put specify a VOID datatype instead 
+// In C, when you don't have any input/output, you can put specify a VOID datatype instead
 void print_fruits(void){
     printf("apple\norange\npear\n");
 }

@@ -30,7 +30,7 @@ bool is_balanced(char *input) {
     int idx = 0;
     while (*input) {
         if (is_opening(*input)) {
-            stack[idx++] = *input++; 
+            stack[idx++] = *input++;
         } else if (is_closing(*input)) {
             if (idx > 0 && matching(stack[idx - 1], *input)) {
                 idx--;
@@ -42,10 +42,10 @@ bool is_balanced(char *input) {
             input++;
         }
     }
-    
+
     // Make sure the stack is empty, i.e. idx == 0
     return idx == 0;
-}  
+}
 
 int main(void) {
     int count = 1;

@@ -22,7 +22,7 @@ int main(void){
     */
     char c = 'A';
     printf("for char datatype 'A':\n");
-    printf("formatted char: %c\nformatted int: %d\nformatted float: %lf\n\n", c, c, c); // legal C, prints out ASCII encoding of 'c' 
+    printf("formatted char: %c\nformatted int: %d\nformatted float: %lf\n\n", c, c, c); // legal C, prints out ASCII encoding of 'c'
 
     /*
     primitive dataype: int
@@ -34,7 +34,7 @@ int main(void){
     int x = 65;
     printf("for int datatype 65:\n");
     printf("formatted char: %c\nformatted int: %d\nformatted float: %lf\n\n", x, x, x);
-    
+
 
     /*
     primitive dataype: float/double

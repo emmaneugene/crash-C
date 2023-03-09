@@ -6,7 +6,7 @@
 
 void generate_code(char *code) {
     srand(time(0));
-    
+
     for (int i = 0; i < 4; i++) {
         switch (rand() % 6)
         {
@@ -27,7 +27,7 @@ void generate_code(char *code) {
             break;
         case 5:
             code[i] = 'V';
-            break;    
+            break;
         }
     }
 }
@@ -74,8 +74,8 @@ int partial_matches(char *code, char *guess) {
 
     char guess_copy[len];
     strcpy(guess_copy, guess);
-    
-    
+
+
     for (int i = 0; i < len; i++) {
         for (int j = 0; j < len; j++) {
             if (code[i] == guess_copy[j]) {
@@ -95,7 +95,7 @@ int main(void) {
 
     int count = 1;
 
-    char guess[5];    
+    char guess[5];
     printf("Enter 4-letter guess(R, O, Y, G, B, V):");
     scanf("%s", guess);
 

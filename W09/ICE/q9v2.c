@@ -22,7 +22,7 @@ char* my_strstr(char *haystack, char *needle) {
                 if (*haystack_track == '\0') {
                     return NULL;
                 }
-                
+
                 if (*haystack_track++ != *needle_track++) {
                     is_found = false;
                     break;
@@ -35,7 +35,7 @@ char* my_strstr(char *haystack, char *needle) {
         }
         haystack++;
     }
-    
+
     return NULL;
 }
 

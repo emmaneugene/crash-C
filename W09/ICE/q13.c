@@ -61,7 +61,7 @@ int main(void) {
         printf("Actual  :%s %d\n", string, result);
         printf("\n");
     }
-    
+
     {
         char string[] = "a";
         int result = remove_consecutive_duplicates(string);

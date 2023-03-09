@@ -23,8 +23,8 @@ int main(){
     } else {
         printf("** Try again! **\n");
     }
-    
-    /* 
+
+    /*
     Test cases          Expected output
     -----------------------------------
     8                   Jackpot

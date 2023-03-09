@@ -8,4 +8,3 @@ int main(void){
     scanf("%d", &V);
     printf("rated power: %d Wh\n", mAh / 1000 * V);
 }
-

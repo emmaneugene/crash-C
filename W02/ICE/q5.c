@@ -16,7 +16,7 @@ int main(void){
         printf("%c is a special character\n", ch); // remaining cases
     }
 
-    /* 
+    /*
     Test cases          Expected output
     -----------------------------------
     0                   digit

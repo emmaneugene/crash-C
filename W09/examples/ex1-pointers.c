@@ -1,4 +1,4 @@
-/* 
+/*
 1. Declaring pointers
 2. Address (&) operator to get the address of a variable in memory
 3. The indirection (*) operator to get the value of an object referenced by a pointer
@@ -16,15 +16,15 @@ int main(void) {
     // We can chain the operators as much as we want
     printf("Chained address: %p\n\n", &*&*&n);
     printf("Chained dereference: %d\n\n", *&*&n);
-    
+
     // Initialise a pointer to n
     // Pointer stores the ADDRESS of an INT variable
-    int *ptr = NULL; // 
+    int *ptr = NULL; //
     ptr = &n;
     // Printing the value of pointer
     printf("Pointer: %p\n\n", ptr);
     // We can print the memory address of the pointer itself, but this value will be different from the address of the int variable
-    printf("Address of pointer: %p\n\n", &ptr); 
+    printf("Address of pointer: %p\n\n", &ptr);
 
     printf("Single dereferenced pointer:%p -> %i\n\n", ptr, *ptr);
 
@@ -42,7 +42,7 @@ int main(void) {
 
     // In the following case a is a pointer, but b is an integer
     int* a, b;
-    
+
     // If we want to do multiple pointer declarations, we should do the following
     int *ptr_a, *ptr_b;
 }

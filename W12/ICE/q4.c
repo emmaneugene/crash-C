@@ -9,12 +9,12 @@ int total(char *string) {
     total += value;
     while (*string != '\0') {
         string++;
-        
+
         if (!isdigit(*string) && *string != '\0') {
             sscanf(string, "%d", &value);
             total += value;
         }
-    }    
+    }
     return total;
 }
 

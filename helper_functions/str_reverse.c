@@ -4,7 +4,7 @@ void reverse_string(char string[]) {
     // Reverses an entire string
     int len = strlen(string);
     char temp;
-    
+
     for (int i = 0; i < len / 2; i++) {
         temp = string[i];
         string[i] = string[len - 1 - i];

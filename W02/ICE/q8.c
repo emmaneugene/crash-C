@@ -23,8 +23,8 @@ int main(void){
             printf("There are 31 days in this month.\n");
         }
     }
-    
-    /* 
+
+    /*
     Test cases          Expected output
     -----------------------------------
     2                   28 days

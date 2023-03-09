@@ -130,7 +130,7 @@ bool is_anagram(char *str1, char *str2) {
     if (strlen(str1) != strlen(str2)) {
         return false;
     }
-    
+
     int len = strlen(str1);
     // Copy over str2 to str2_copy
     char str2_copy[len];
@@ -158,7 +158,7 @@ bool is_anagram(char *str1, char *str2) {
             return false;
         }
     }
-    
+
     return true;
 }
 

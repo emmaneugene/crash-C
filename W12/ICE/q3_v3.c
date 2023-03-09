@@ -7,7 +7,7 @@
 void rotate(int arr[], int n, int shift) {
     // Get absolute value of shift
     shift %= n;
-    
+
     int temp = 0;
 
     for (int i = 0; i < shift; i++) {

@@ -9,7 +9,7 @@ double average(int values[], int size) {
     // Corner case
     if (size < 1) {
         return sum;
-    } 
+    }
 
     for (int i = 0; i < size; i++) {
         sum += values[i];

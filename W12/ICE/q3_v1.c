@@ -8,7 +8,7 @@ void rotate(int arr[], int n, int shift) {
     shift %= n;
     // Change to forward shift
     shift = n - shift;
-    
+
     // Make copy
     int arr_copy[n];
     for (int i = 0; i < n; i++) {

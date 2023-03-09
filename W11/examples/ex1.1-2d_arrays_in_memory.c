@@ -1,4 +1,4 @@
-/* 
+/*
 How do we create an array in main through a helper function function?
  */
 #include <stdio.h>

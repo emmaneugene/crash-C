@@ -1,4 +1,4 @@
-/* 
+/*
 Objectives:
 1. Understand what happens in memory when a function is invoked
 2. Understand the LIFO principle of stacks
@@ -26,7 +26,7 @@ int main(void){
     therefore any change in the value of x within do_x() will not change the value of x within the scope of main()
     */
     do_x(x);
-    /* 
+    /*
     Stacks follow the principle of LIFO (last in first out) the idea being that pushing adds a stack to the top, while popping removes a stack from the top
      */
 

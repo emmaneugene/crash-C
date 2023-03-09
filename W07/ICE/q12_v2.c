@@ -21,7 +21,7 @@ void reverse_words(char sentence[]) {
     int index = 0;
     int word_start = 0;
     int word_end = 0;
-    
+
     while (index < len) {
         // Get next word_end
         while (sentence[index + 1] != ' ' && sentence[index + 1] != 0) {

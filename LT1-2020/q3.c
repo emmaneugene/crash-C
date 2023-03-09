@@ -11,12 +11,12 @@ int get_num_length(int num) {
 
 int extract(int num, int start, int end) {
     int len = get_num_length(num);
-    
+
     int start_rmv_count = len - start;
     int start_multiplier = 1;
     for (int i = 0; i < start_rmv_count; i++) {
         start_multiplier *= 10;
-    } 
+    }
     num %= start_multiplier;
 
     int end_rmv_cnt = len - end;

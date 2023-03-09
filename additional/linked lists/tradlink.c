@@ -7,36 +7,36 @@
 typedef int BOOL;
 
 /* a set of routines to illustrate insertion into, and deletion from, a linked
-list using `traditional' single-level pointer techniques. The routines for 
-deleting a list element, and for inserting at the front of a list are 
-adapted from Kernighan and Pike's "The Practice of Programming"  pp.46 et 
-seq. (Addison-Wesley 1999). The elements of the list are of type THING 
-where each THING is a structure in which the `item' field holds a 
-string and the `next' field holds a pointer to the next THING on the list. 
+list using `traditional' single-level pointer techniques. The routines for
+deleting a list element, and for inserting at the front of a list are
+adapted from Kernighan and Pike's "The Practice of Programming"  pp.46 et
+seq. (Addison-Wesley 1999). The elements of the list are of type THING
+where each THING is a structure in which the `item' field holds a
+string and the `next' field holds a pointer to the next THING on the list.
 
-The techniques for adding a THING before the start of a list, or after the 
-end of a list, are two special cases that are straightforward enough. 
-However if the list elements are to be kept ordered alphabetically (say)  
-the insertion of a new element needs great care to ensure that the 
-NULL end-of-list marker does not get dereferenced.  
+The techniques for adding a THING before the start of a list, or after the
+end of a list, are two special cases that are straightforward enough.
+However if the list elements are to be kept ordered alphabetically (say)
+the insertion of a new element needs great care to ensure that the
+NULL end-of-list marker does not get dereferenced.
 
 In summary the routines should be robust against:
 
  1) inserting/deleting to/from an empty list
  2) inserting/deleting to/from a single-element list
  3) inserting/deleting at the end of a list
- 4) inserting/deleting at the front of a list - with updating of the 
+ 4) inserting/deleting at the front of a list - with updating of the
     pointer to the  list head
- 
-The general routine `addmiddle', supplied below, is general purpose but 
-it calls on 'addfront' and 'addend' in specific special cases. Note 
-carefully that it does allow for duplicate list elements. 
+
+The general routine `addmiddle', supplied below, is general purpose but
+it calls on 'addfront' and 'addend' in specific special cases. Note
+carefully that it does allow for duplicate list elements.
 Exercise: modify `addmiddle so that this duplication is NOT allowed.
  */
 
 
-typedef struct _thing 
-{ 
+typedef struct _thing
+{
 	char *item;
 	struct _thing *next;
 } THING;
@@ -54,9 +54,9 @@ THING *newelement(char *text)
 	return newp;
 }
 
-// delelement: remove from list the first instance of an element 
+// delelement: remove from list the first instance of an element
 // containing a given text string
-// NOTE!! delete requests for elements not in the list are silently ignored 
+// NOTE!! delete requests for elements not in the list are silently ignored
 THING *delelement(THING *head, char *text)
 {
 	THING *p, *prev;
@@ -71,7 +71,7 @@ THING *delelement(THING *head, char *text)
 		free(p);	// remove rest of THING
 		return head;
 	   }
-	   prev = p;	
+	   prev = p;
 	}
 }
 
@@ -89,7 +89,7 @@ THING *addfront(THING *head, THING *newp)
 
 THING *addend (THING *head, THING *newp)
 {
-	THING *p2; 	
+	THING *p2;
 	if (head == NULL)
 		return newp;
 // now find the end of list
@@ -99,24 +99,24 @@ THING *addend (THING *head, THING *newp)
 	return head;
 }
 
-// add element into middle of a list of THINGs based on alphabetical order 
-// of the `item' strings within the THING structures 
+// add element into middle of a list of THINGs based on alphabetical order
+// of the `item' strings within the THING structures
 THING *addmiddle (THING *head, THING *newp)
 {
 	BOOL found = FALSE;
-	THING *p1, *p2; 	
+	THING *p1, *p2;
 	if (head == NULL) { //special case
 //		printf("initial list was NULL\n");
 		head = addfront(head, newp);
 		return head;
 	}
 // Main loop. Use p2 to remember previous p1
-	p2 = p1 = head ; 
+	p2 = p1 = head ;
 	while (!found) {
   		if (found = strcmp(p1 -> item, newp -> item) >= 1) {
-			if (p1 == head) { 
+			if (p1 == head) {
 //					printf("adding at head\n");
-					head = addfront(head, newp); 
+					head = addfront(head, newp);
 					return head;
 		        }
 			else { //general case - insert the item
@@ -126,16 +126,16 @@ THING *addmiddle (THING *head, THING *newp)
 				return head;
 	  		}
 	  	}
-// match not found before end of list so insert at end 
+// match not found before end of list so insert at end
 	if  (p1 -> next == NULL) {
-		head = addend(head, newp); 
+		head = addend(head, newp);
 		return head;
 	}
 // go round while loop one more time
-	p2 = p1; p1 = p1 -> next; 
-	
-	}// end of while 
-	
+	p2 = p1; p1 = p1 -> next;
+
+	}// end of while
+
 }
 
 
@@ -153,10 +153,10 @@ void printlist(THING **head)
 
 int main(int argc, char **argv)
 {
-	start = addmiddle(start, newelement("chips")); 
-	start = addmiddle(start, newelement("wine")); 
-	start = addmiddle(start, newelement("beer")); 
-	start = addmiddle(start, newelement("pizza")); 
+	start = addmiddle(start, newelement("chips"));
+	start = addmiddle(start, newelement("wine"));
+	start = addmiddle(start, newelement("beer"));
+	start = addmiddle(start, newelement("pizza"));
 	start = addmiddle(start, newelement("zucchini"));
 	start = addmiddle(start, newelement("burgers"));
 	start = addmiddle(start, newelement("burgers"));
@@ -168,5 +168,5 @@ int main(int argc, char **argv)
 	delelement(start, "burgers");
 	printf("\nALTERED LIST\n");
 	printlist(&start);
-	
+
 }

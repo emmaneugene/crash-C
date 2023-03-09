@@ -20,7 +20,7 @@ char* my_strstr(char *haystack, char *needle) {
                 if (*(haystack + i) == '\0') {
                     return NULL;
                 }
-                
+
                 if (*(haystack + i) != *(needle + i)) {
                     is_found = false;
                 }
@@ -31,7 +31,7 @@ char* my_strstr(char *haystack, char *needle) {
             }
         }
     }
-    
+
     return NULL;
 }
 

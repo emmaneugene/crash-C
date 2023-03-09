@@ -20,7 +20,7 @@ void add_to_combination(int *combi, int combi_size, int *arr, int idx, int arr_s
     if (idx == arr_size) {
         free(combi);
         return;
-    } 
+    }
 
     int val = arr[idx];
 
@@ -31,9 +31,9 @@ void add_to_combination(int *combi, int combi_size, int *arr, int idx, int arr_s
             printf("%d, ", combi[i]);
         }
         printf("%d)\n", val);
-        
-        if (!(*valid_combi_ptr)) { 
-            *valid_combi_ptr = true; 
+
+        if (!(*valid_combi_ptr)) {
+            *valid_combi_ptr = true;
         }
     }
 
@@ -80,7 +80,7 @@ int main(void) {
         printf("Actual  : \n");
         get_sum_combinations(arr, sizeof(arr)/sizeof(int), sum);
     }
-    
+
     {
         printf("\n\nTest case 2\n");
         int arr[] = {4, 3, 2, 1};
@@ -92,15 +92,15 @@ int main(void) {
 
         printf("Actual  : \n");
         get_sum_combinations(arr, sizeof(arr)/sizeof(int), sum);
-        
-        
+
+
     }
-    
+
     {
         printf("\n\nTest case 3\n");
         int arr[] = {17, 5};
         int sum = 11;
-        
+
         printf("Expected: \n");
         printf("-None-\n");
 

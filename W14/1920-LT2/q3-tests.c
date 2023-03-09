@@ -23,7 +23,7 @@ void cut_queue(customer **first_customer, customer *queue_cutter, char *unlucky_
     customer *prev = c;
     c = c->next_customer;
     int i = 10;
-    while (c) { 
+    while (c) {
         // printf("c = %s, prev = %s\n", c->name, prev->name);
         // printf("%d\n", i);
         if (strcmp(c->name, unlucky_queuer_name) == 0) {
@@ -68,7 +68,7 @@ int main(void) {
         printf("Actual  : ");
         print_queue(first_customer);
 
-        if (z.next_customer == &a && 
+        if (z.next_customer == &a &&
             a.next_customer == &b &&
             b.next_customer == &c) {
                 score_awarded = score_worth;
@@ -99,7 +99,7 @@ int main(void) {
         printf("Actual  : ");
         print_queue(first_customer);
 
-        if (a.next_customer == &z && 
+        if (a.next_customer == &z &&
             z.next_customer == &b &&
             b.next_customer == &c) {
                 score_awarded = score_worth;
@@ -130,7 +130,7 @@ int main(void) {
         printf("Actual  : ");
         print_queue(first_customer);
 
-        if (a.next_customer == &b && 
+        if (a.next_customer == &b &&
             b.next_customer == &z &&
             z.next_customer == &c) {
                 score_awarded = score_worth;
@@ -145,7 +145,7 @@ int main(void) {
 
     if (score != 5) {
         printf("This test is skipped, because one or more of the previous test cases failed.\n");
-    } else { 
+    } else {
         // this test case is worth something only if the previous 2 test cases were correct
         double score_worth   = 1;
         double score_awarded = 0;
@@ -165,7 +165,7 @@ int main(void) {
         printf("Actual  : ");
         print_queue(first_customer);
 
-        if (a.next_customer == &b && 
+        if (a.next_customer == &b &&
             b.next_customer == &c) {
                 score_awarded = score_worth;
             } else {

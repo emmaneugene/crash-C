@@ -24,9 +24,9 @@ void get_longest_snake(int rows, int cols, int grid[][cols]) {
 
     // O(ab + ab) complexity ~ O(ab)
 
-    // value: | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 
-    // x-pos: | ? | ? | ? | ? | ? | ? | ? | ? | ? | 
-    // y-pos: | ? | ? | ? | ? | ? | ? | ? | ? | ? | 
+    // value: | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
+    // x-pos: | ? | ? | ? | ? | ? | ? | ? | ? | ? |
+    // y-pos: | ? | ? | ? | ? | ? | ? | ? | ? | ? |
     point pointarray[rows * cols];
 
     for (int i = 0; i < rows; i++) {
@@ -39,7 +39,7 @@ void get_longest_snake(int rows, int cols, int grid[][cols]) {
     // Look for the longest valid streak
     int longest_streak = 1;
     int start_num = 1;
-    
+
     int curr_streak = 1;
     int curr_num = 1;
 
@@ -65,7 +65,7 @@ void get_longest_snake(int rows, int cols, int grid[][cols]) {
         printf("%d ", start_num++);
     }
     printf("\n");
-       
+
 }
 
 

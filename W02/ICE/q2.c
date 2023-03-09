@@ -7,8 +7,8 @@ int main(void){
     scanf("%d", &num);
 
     printf("%d is %s\n", num, num % 2 == 0 ? "even" : "odd");
-    
-    /* 
+
+    /*
     Test cases          Expected output
     -----------------------------------
     num = 0             even

@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/* 
+/*
  Understand how to use scanf()
  sscanf() is to scanf() just as sprintf() is to printf()
  if sprintf() allows you to store values into a string, then sscanf() allows you to read values from a string

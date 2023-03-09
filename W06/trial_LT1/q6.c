@@ -1,21 +1,21 @@
 /**
- * 
+ *
  * Name: Emmanuel Oh Eu-Gene
  * Email: emmanueloh.2019@sis.smu.edu.sg
- * 
+ *
  */
 
 #include <stdio.h>
 
 void print_pascal(int num) {
-    // Fully declare the size of the array until you want it to be 
+    // Fully declare the size of the array until you want it to be
     int current_array[num];
     current_array[0] = 1;
 
     int next_array[num];
     next_array[0] = 1;
     next_array[1] = 1;
-    
+
     // For each line
     for (int i = 1; i <= num; i++) {
         // Print out everything in current_array[]

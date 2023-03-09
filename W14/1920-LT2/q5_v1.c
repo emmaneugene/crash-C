@@ -3,8 +3,8 @@
  * Email: emmanueloh.2019@sis.smu.edu.sg
  */
 
-/* 
-    Create a linked list of possible purchase combinations, instead of an array 
+/*
+    Create a linked list of possible purchase combinations, instead of an array
 */
 
 #include <stdio.h>
@@ -56,7 +56,7 @@ purchase *get_next_list(purchase *head, potato new, int budget) {
 
 double get_max_score(int budget, int n, double prices[], double insta_scores[]) {
     potato potatoes[n];
-    
+
     // 1st round of list comprehension
     int idx = 0;
     for (int i = 0; i < n; i++) {
@@ -67,7 +67,7 @@ double get_max_score(int budget, int n, double prices[], double insta_scores[]) 
         }
     }
 
-    
+
     if (idx == 0) {
         // No valid potatoes to purchase
         return 0;
@@ -208,6 +208,6 @@ int main() {
         printf("Time taken: %fs\n", time_spent);
         printf("\n");
     }
-    
-    
+
+
 }

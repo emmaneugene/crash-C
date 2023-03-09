@@ -47,7 +47,7 @@ void print_dancing_string(char *string, char spot) {
     mid_row[len] = '\0';
     bot_row[len] = '\0';
 
-   
+
     printf("|%s|\n", top_row);
     printf("|%s|\n", mid_row);
     printf("|%s|\n", bot_row);

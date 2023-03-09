@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 void print_pascal(int num) {
-    // Fully declare the size of the array until you want it to be 
+    // Fully declare the size of the array until you want it to be
     int current_array[num];
     current_array[0] = 1;
     int temp_prev;

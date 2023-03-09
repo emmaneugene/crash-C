@@ -6,7 +6,7 @@
 void merge_sort(int values[], int start, int end) {
     if (end - start == 1) {
         return;
-    } 
+    }
 
     // Sort subarrays
     int middle = (end - start) / 2;
@@ -20,7 +20,7 @@ void merge_sort(int values[], int start, int end) {
     int idx3 = 0;
 
     while (idx1 < start + middle && idx2 < end) {
-        temp_arr[idx3++] = (values[idx1] < values[idx2]) ? values[idx1++] : values[idx2++];         
+        temp_arr[idx3++] = (values[idx1] < values[idx2]) ? values[idx1++] : values[idx2++];
     }
 
     while (idx1 < start + middle) {

@@ -37,7 +37,7 @@ int main(void) {
         printf("Actual  :%s\n", is_equals(&p1, &p2) ? "True" : "False");
         printf("\n");
     }
-    
+
     {
         printf("Test 3\n");
         person p1 = {"Sue", 12};

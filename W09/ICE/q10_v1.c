@@ -35,7 +35,7 @@ void run_length_encode(char* input, char* output) {
         for (int j = 0; j < len; j++) {
             *output++ = '0' + count_arr[j];
         }
-    }   
+    }
 }
 
 int main(void) {

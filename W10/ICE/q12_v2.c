@@ -18,8 +18,8 @@ int scramble_and_copy_word(char *word, char *scrambled,int len) {
         do {
             rand_index = rand() % (len - 1 - i) + i;
         } while ((len - 1 - i) > 1 && rand_index == i);
-        
-        // Swap the ith character with the random character 
+
+        // Swap the ith character with the random character
         temp = scrambled[i];
         scrambled[i] = scrambled[rand_index];
         scrambled[rand_index] = temp;
@@ -36,7 +36,7 @@ void scramble_sentence(char *original, char *scrambled) {
         // Scramble next_word and copy to scrambled
         scrambled += scramble_and_copy_word(next_word, scrambled, strlen(next_word));
         *scrambled++ = ' ';
-        
+
         // Go to next word
         next_word = strtok(NULL, " ");
     }

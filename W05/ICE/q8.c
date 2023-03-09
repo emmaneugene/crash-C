@@ -8,7 +8,7 @@ int swap_digit_pairs(int n){
     int swapped_pair;
 
     while (n >= 10 || n <= -10) {
-        // Get the next pair 
+        // Get the next pair
         next_pair = n % 100;
         // Swap the next pair (we don't care if it's a single digit)
         swapped_pair = (next_pair % 10) * 10 + next_pair / 10;

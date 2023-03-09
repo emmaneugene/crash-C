@@ -1,4 +1,4 @@
-/* 
+/*
 1. Understand basic arithmetic operators in C (+, -, /, %, *)
 2. Understand how mixed type expressions are evalated (e.g int / int = float)
 3. Understand the rules of precedence for order of operations (BODMAS)

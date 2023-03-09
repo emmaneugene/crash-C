@@ -1,4 +1,4 @@
-/* 
+/*
 Objectives:
 1. Learn how to use arrays to represent a list of values (of the same datatype)
 2. Declare and initialize an array
@@ -12,7 +12,7 @@ int main(void){
     // You can choose not to specify the number of elements in an array when declaring it, but this is recommended
     int numbers[3] = {2, 5, 8};
 
-    /* 
+    /*
     INDEX:   [0] [1] [2]
             +---+---+---+
     VALUE:  | 2 | 5 | 8 |

@@ -4,7 +4,7 @@ void my_strcpy(char* dest, char* src) {
     while (*src != '\0') {
         *dest++ = *src++;
     }
-    
+
     // Indicate end of string
     *dest = '\0';
 }
