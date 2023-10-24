@@ -6,7 +6,7 @@
  Checks if a number n is prime by trying to divide it by integers from integers
  2 to sqrt(n). If the number is not divisible by any of of those values, it is prime.
 */
-bool is_prime(int num){
+bool is_prime(int num) {
     if (num == 1) {
         return false;
     }
