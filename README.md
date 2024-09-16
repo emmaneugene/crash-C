@@ -1,6 +1,4 @@
-# CA code clinic 2
-
-## A brief introduction to programming in C
+# A brief introduction to programming in C
 
 ### Overview
 
